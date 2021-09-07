@@ -67,3 +67,34 @@ buttons-checkbox.ts -->
   <input type="text" formControlName="date">
 </div>
 <button (click)="onShowAll()">SHOW ALL</button>
+
+<p>-------------------------------------</p>
+
+<p>sdfsdfs</p>
+
+<input type="text"
+        required
+        minlength="5"
+        maxlength="10"
+        [(ngModel)]="name"
+        #nameLocal="ngModel">
+
+<div>
+  {{nameLocal.errors | json}}
+</div>
+
+<div *ngIf="nameLocal.valid">
+  ES VALIDO
+</div>
+
+<div *ngIf="nameLocal.invalid && (nameLocal.touched || nameLocal.dirty )">
+
+  <div *ngIf="nameLocal.errors?.required">
+    Name is required
+  </div>
+
+  <div *ngIf="nameLocal.errors?.minlength">
+    minLength is required
+  </div>
+
+</div>

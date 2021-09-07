@@ -40,28 +40,31 @@ buttons-checkbox.ts -->
 <button (click)="patch()">patch</button>
 
 <app-login1></app-login1>
+<br>
 <app-login2></app-login2>
 
 <hr>
 
 
-<p>TEMPLATE FORM</p>
+<h2>TEMPLATE FORM</h2>
 <form #formTemplate="ngForm"
-      (ngSubmit)="onSubmitTemplate(formTemplate)">
+      (ngSubmit)="onSubmitTemplate(formTemplate)"
+      style="border: 4px solid yellow;">
   <input type="text" name="aagggg" ngModel>
   <input type="text" name="bb" ngModel>
   <input type="text" name="cc" ngModel>
-  <button type="submit">submit</button>
+  <button type="submit">SUBMIT</button>
 </form>
 
 <hr>
-<p>---------REACTIVE FORMS------------------</p>
+<h2>REACTIVE FORMS</h2>
 
 <input type="text" [formControl]="name">
 <button (click)="onShow()">SHOW</button>
 <br><br>
 
-<div [formGroup]="formReactive">
+<div [formGroup]="formReactive"
+style="border: 4px solid purple;">
   <input type="text" formControlName="name">
   <input type="text" formControlName="lastName">
   <input type="text" formControlName="date">

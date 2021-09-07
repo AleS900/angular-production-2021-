@@ -14,8 +14,7 @@ export class HomeComponent implements OnInit {
   }
 
   onShowMessage():void{
-    //console.log(this.singletonService.getMessage());
-    console.log('Hi, this is a message from LOGIN');
+    console.log(this.singletonService.getMessage());
   }
   
 }

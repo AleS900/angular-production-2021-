@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login.component';
+import { LoginComponentP1 } from './loginP1.component';
 import {RouterModule, Routes} from "@angular/router";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {NgbButtonsModule, NgbToastModule} from "@ng-bootstrap/ng-bootstrap";
@@ -20,7 +21,8 @@ const routes: Routes = [
   declarations: [
     LoginComponent,
     Login1Component,
-    Login2Component
+    Login2Component,
+    LoginComponentP1
   ],
   imports: [
     MatProgressSpinnerModule,

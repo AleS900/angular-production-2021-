@@ -12,9 +12,8 @@ import {FormBuilder, FormControl, FormGroup, Validators} from "@angular/forms";
 export class LoginComponent implements OnInit {
 
   name = new FormControl('');
-
   formReactive: FormGroup;
-
+  
   constructor(private test1Service: Test1Service,
     private formBuilder: FormBuilder,
     private singletonService: SingletonService,
